@@ -90,6 +90,7 @@ nav a:hover{
     border-radius: 5px;
     text-decoration: none;
     padding: 5px 5px;
+    width: 115px;
 }
 
 .black-button2:hover{
@@ -99,12 +100,16 @@ nav a:hover{
 .hero-info{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
-/*
-.teams-hero{
-    
+.together{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 15px 0;
 }
-*/
+
+.teams-hero{
+    height: 300px;
+}
+
