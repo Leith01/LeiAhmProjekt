@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Inter';
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(material/Inter.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #050505;
+    padding: 5px 10px;
+}
+
+#brand{
+    width: 100px;
+    margin-left: 10px;
+}
+
+#nav-left, #nav-right{
+    display: flex;
+    gap: 20px;
+}
+
+nav a:hover{
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
