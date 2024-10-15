@@ -2,6 +2,16 @@
      font-family: 'Inter'; 
 }
 
+:root{
+    --button-bg-color: black;
+    --button-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --button-text-color: white;
+    --button-border-radius: 5px;
+    --button-padding: 5px 5px;
+    --button-width: 115px;
+    --button-text-decoration: none;
+}
+
 body{
     margin: 0;
 }
@@ -24,6 +34,7 @@ nav{
     top: 0;
     z-index: 1000;
     background-color: white;
+    font-size: 15px;
 }
 
 nav a{
@@ -48,7 +59,7 @@ nav a{
     height: 15px;
 }
 
-.black-button{
+.black-button1{
     background-color: black;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
@@ -61,7 +72,7 @@ nav a:hover{
    
 }
 
-.black-button:hover{
+.black-button1:hover{
     background-color: #1f1f1f;
     box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.15);
 }
@@ -85,17 +96,17 @@ nav a:hover{
     padding: 50px 10px;
 }
 
-.black-button2{
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 5px 5px;
-    width: 115px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.black-button{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border-radius: var(--button-border-radius);
+    text-decoration: var(--button-text-decoration);
+    padding: var(--button-padding);
+    box-shadow: var(--button-box-shadow);
+    width: var(--button-width);
 }
 
-.black-button2:hover{
+.black-button:hover{
     background-color: #1f1f1f;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
@@ -170,6 +181,8 @@ nav a:hover{
 
 .user-page{
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    border-radius: 5px;
 }
 
 .face-info{
