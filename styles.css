@@ -216,7 +216,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     margin-top: 120px;
-    max-width: 600px;
+    max-width: 667px;
 }
 
 .free-plan{
@@ -229,5 +229,34 @@ nav a:hover{
 .free-plan h1{
     line-height: 1;
     margin: 0;
+}
+
+.free-plan p{
+    padding: 0 60px;
+}
+
+#plan-section{
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    margin-top: 70px;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    max-width: 100%;
+}
+
+.last-feature{
+    border-bottom: none;
+}
+
+.feature img{
+    height: 15px;
 }
 
