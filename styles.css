@@ -266,6 +266,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    margin-top: 20px;
 }
 
 .work-section{
@@ -275,6 +276,7 @@ nav a:hover{
     flex-direction: column;
     text-align: center;
     border-right: 1px solid gray;
+    padding-right: 25px;
 }
 
 .work-section a{
