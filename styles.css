@@ -223,6 +223,7 @@ nav a:hover{
 .centered-text-section{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
@@ -290,3 +291,49 @@ nav a:hover{
 .last-work-section{
     border-right: none;
 }
+
+#last-section{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 10px;
+}
+
+.rating-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.badges{
+    height: 200px;
+}
+
+.grid-percantage-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.percentage-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid gray;
+}
+
+.last-percentage-section{
+    border-right: none;
+}
+
+/*fixa länkarna så att bara linjen blir blå senare*/
