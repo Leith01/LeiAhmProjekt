@@ -220,14 +220,15 @@ nav a:hover{
     margin-bottom: 50px;
 }
 
-.free-plan{
+.centered-text-section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+    flex-direction: column;
 }
 
-.free-plan h1{
+.centered-text-section h1{
     line-height: 1;
     margin: 0;
 }
@@ -261,3 +262,29 @@ nav a:hover{
     height: 15px;
 }
 
+#grid-work-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.work-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-right: 1px solid gray;
+}
+
+.work-section a{
+    color: black;
+}
+
+.work-section a:hover{
+    color: blue;
+}
+
+.last-work-section{
+    border-right: none;
+}
