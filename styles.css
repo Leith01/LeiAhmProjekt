@@ -227,6 +227,7 @@ nav a:hover{
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
+    padding: 0 43px;
 }
 
 .centered-text-section h1{
@@ -263,11 +264,18 @@ nav a:hover{
     height: 15px;
 }
 
+#solve-problems-section{
+    border-top: 1px solid gray;
+    margin-top: 70px;
+    padding-top: 80px;
+}
+
 #grid-work-section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 30px;
     margin-top: 20px;
+    margin-bottom: 80px;
 }
 
 .work-section{
@@ -282,6 +290,8 @@ nav a:hover{
 
 .work-section a{
     color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
 }
 
 .work-section a:hover{
@@ -322,6 +332,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    margin-bottom: 80px;
 }
 
 .percentage-section{
