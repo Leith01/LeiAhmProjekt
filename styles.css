@@ -71,12 +71,14 @@ nav a{
 nav a:hover{
     background-color: #f4f4f4;
     border-radius: 5px;
+    cursor: pointer;
    
 }
 
 .black-button1:hover{
     background-color: #1f1f1f;
     box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .hamburger{
@@ -115,6 +117,7 @@ nav a:hover{
 .black-button:hover{
     background-color: #1f1f1f;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .hero-info{
@@ -302,6 +305,7 @@ nav a:hover{
 
 .work-section a:hover{
     color: blue;
+    cursor: pointer;
 }
 
 .last-work-section{
@@ -419,6 +423,7 @@ footer{
 .footer-links a:hover{
     text-decoration: underline;
     text-decoration-color: black;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {
@@ -458,6 +463,7 @@ footer{
 
     .hamburger:hover{
         background-color: lightgray;
+        cursor: pointer;
     }
 
     #nav-left a, #nav-right a{
