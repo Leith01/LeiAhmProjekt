@@ -34,6 +34,7 @@ nav{
     /*stickyyyy*/
     position: sticky;
     top: 0;
+    z-index: 999;
     background-color: white;
     font-size: 15px;
 }
@@ -422,34 +423,49 @@ footer{
 
 @media (max-width: 600px) {
     nav{
-        position: fixed;
+        position: relative;
         top: 0;
+        left: 0;
+        right: 0;
         border-bottom: none;
         z-index: 1000;
-        width: 100%;
         box-sizing: border-box;
-        justify-content: space-between;
-        align-items: center;
+        margin-left: 10px;
     }
 
-    #nav-left, #nav-right{
-        flex-grow: 0;
-        flex-shrink: 1;
-        width: auto;
+    #nav-left{
+        flex-grow: 1;
+        align-items: center;
+        justify-content: start;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .brand{
+        width: 100px;
+        margin-right: 0;
+    }
+
+    #nav-right{
+        align-items: center;
+        margin-left: auto;
     }
 
     .hamburger{
         display: block;
-        position: absolute;
+        height: 20px;
+    }
+
+    .hamburger:hover{
+        background-color: lightgray;
     }
 
     #nav-left a, #nav-right a{
         display: none;
     }
-}
 
 
-/* fix later
+
    #main{
         padding: 0 10px;
     }
@@ -463,8 +479,13 @@ footer{
         align-items: center;
     }
 
-    #logo-wrapper{
+    #companys{
         justify-content: space-between;
+        padding: 10px 10px;
+    }
+
+    #logo-wrapper{
+        padding: 10px;
     }
 
     .info-section{
@@ -492,5 +513,4 @@ footer{
         gap: 10px;
     }
 }
-*/
     
