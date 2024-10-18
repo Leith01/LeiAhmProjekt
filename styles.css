@@ -1,5 +1,5 @@
 *{
-     font-family: 'Inter'; 
+     font-family: 'Inter';
 }
 
 :root{
@@ -14,6 +14,7 @@
 
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -27,12 +28,12 @@ nav{
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-bottom: 1px solid gray;
     margin: 0 20px;
     /*stickyyyy*/
     position: sticky;
     top: 0;
-    z-index: 1000;
     background-color: white;
     font-size: 15px;
 }
@@ -418,3 +419,78 @@ footer{
     text-decoration: underline;
     text-decoration-color: black;
 }
+
+@media (max-width: 600px) {
+    nav{
+        position: fixed;
+        top: 0;
+        border-bottom: none;
+        z-index: 1000;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-left, #nav-right{
+        flex-grow: 0;
+        flex-shrink: 1;
+        width: auto;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+    }
+
+    #nav-left a, #nav-right a{
+        display: none;
+    }
+}
+
+
+/* fix later
+   #main{
+        padding: 0 10px;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-info{
+        align-items: center;
+    }
+
+    #logo-wrapper{
+        justify-content: space-between;
+    }
+
+    .info-section{
+        text-align: center;
+    }
+
+    .centered-content h1{
+        font-size: 10px;
+    }
+
+    #solve-problems-section, #last-section{
+        flex-direction: column;
+    }
+
+    .share-section{
+        order: -1;
+    }
+
+    .footer-info{
+        margin-top: 10px;
+    }
+
+    #grid-footer-section{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+*/
+    
