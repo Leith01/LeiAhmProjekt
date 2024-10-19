@@ -93,6 +93,7 @@ nav a:hover{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
 }
 
 .hero{
@@ -144,13 +145,10 @@ nav a:hover{
 }
 
 #logo-wrapper{
-    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 20px;
-    margin: 0 auto;
 }
 
 .company-logo{
@@ -373,6 +371,7 @@ footer{
     justify-content: center;
     gap: 57px;
     margin-right: 40px;
+    margin-bottom: 100px;
 }
 
 .share-divider{
@@ -427,6 +426,8 @@ footer{
 }
 
 @media (max-width: 600px) {
+
+    /*Ta bort allt som inte behövs i nav*/
     nav{
         position: relative;
         top: 0;
@@ -473,9 +474,10 @@ footer{
 
 
    #main{
-        padding: 0 10px;
+        padding: 0 20px;
     }
-
+    
+    /*Hero section*/
     .hero{
         flex-direction: column-reverse;
         text-align: center;
@@ -485,25 +487,48 @@ footer{
         align-items: center;
     }
 
+    /* Companys section*/
     #companys{
-        justify-content: space-between;
         padding: 10px 10px;
     }
 
     #logo-wrapper{
-        padding: 10px;
+        padding: 20px 0;
     }
 
-    .info-section{
+    .company-logo{
+        max-width: 100px;
+    }
+
+    /*Info section*/
+    .info-section
+    .left-aligned{
         text-align: center;
     }
+
 
     .centered-content h1{
         font-size: 10px;
     }
 
-    #solve-problems-section, #last-section{
+    #grid-work-section,
+    .rating-section,
+    .grid-percantage-section{
+        display: flex;
         flex-direction: column;
+    }
+
+    .percentage-section,
+    .work-section{
+        border-right: none;
+    }
+
+    #footer-section{
+        flex-direction: column;
+    }
+
+    .share-divider{
+        width: auto;
     }
 
     .share-section{
