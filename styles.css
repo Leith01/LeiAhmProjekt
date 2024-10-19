@@ -34,7 +34,7 @@ nav{
     /*stickyyyy*/
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
     background-color: white;
     font-size: 15px;
 }
@@ -48,6 +48,7 @@ nav a{
 .brand{
     width: 100px;
     margin-left: 10px;
+    margin-right: 20px;
 }
 
 #nav-left, #nav-right{
@@ -135,6 +136,8 @@ nav a:hover{
 
 .teams-hero{
     height: 300px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 #companys{
@@ -153,22 +156,17 @@ nav a:hover{
 
 .company-logo{
     max-width: 120px;
-    height: auto;
     object-fit: contain;
 }
 
 .info-section{
-    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 40px;
-    margin: 0 auto;
 }
 
 .left-aligned{
     max-width: 490px;
-    text-align: left;
 }
 
 .centered-content{
@@ -176,7 +174,6 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
     text-align: center;
 }
 
@@ -184,7 +181,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1000px;
 }
 
 .user-page{
@@ -202,7 +198,6 @@ nav a:hover{
 
 .face-info img{
     width: 40px;
-    height: auto;
 }
 
 .text-info {
@@ -229,9 +224,7 @@ nav a:hover{
 
 .centered-text-section{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
     padding: 0 43px;
@@ -247,8 +240,6 @@ nav a:hover{
 }
 
 #plan-section{
-    max-width: 100%;
-    box-sizing: border-box;
     background-color: #e5e5e5;
     margin-top: 70px;
     border-radius: 5px;
@@ -260,7 +251,6 @@ nav a:hover{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid gray;
-    max-width: 100%;
 }
 
 .last-feature{
@@ -280,15 +270,12 @@ nav a:hover{
 #grid-work-section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
     margin-top: 20px;
     margin-bottom: 80px;
 }
 
 .work-section{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     text-align: center;
     border-right: 1px solid gray;
@@ -311,8 +298,6 @@ nav a:hover{
 }
 
 #last-section{
-    width: 100%;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin-bottom: 80px;
@@ -320,18 +305,18 @@ nav a:hover{
 
 .rating-section{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     gap: 10px;
     padding: 50px 10px;
-    max-width: 100%;
 }
 
 .rating-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.rating-info p{
+    margin: 0;
 }
 
 .badges{
@@ -346,10 +331,13 @@ nav a:hover{
 
 .percentage-section{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     border-right: 1px solid gray;
+}
+
+.percentage-section p{
+    margin: 0;
 }
 
 .last-percentage-section{
@@ -361,14 +349,12 @@ footer{
     padding-top: 70px;
     margin: 0 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 #footer-section{
     width: 1200px;
     display: flex;
-    justify-content: center;
     gap: 57px;
     margin-right: 40px;
     margin-bottom: 100px;
@@ -378,7 +364,6 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 50px;    
-    width: 25%;
 }
 
 .share-section{
@@ -389,7 +374,6 @@ footer{
 
 .last-brand{
     width: 180px;
-    display: flex;
 }
 
 .social-section{
@@ -430,36 +414,18 @@ footer{
     /*Ta bort allt som inte behövs i nav*/
     nav{
         position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
         border-bottom: none;
-        z-index: 1000;
-        box-sizing: border-box;
         margin-left: 10px;
-    }
-
-    #nav-left{
-        flex-grow: 1;
-        align-items: center;
-        justify-content: start;
-        padding-right: 0;
-        margin-right: 0;
-    }
-
-    .brand{
-        width: 100px;
-        margin-right: 0;
     }
 
     #nav-right{
         align-items: center;
-        margin-left: auto;
     }
 
     .hamburger{
         display: block;
         height: 20px;
+        padding: 5px;
     }
 
     .hamburger:hover{
@@ -474,7 +440,7 @@ footer{
 
 
    #main{
-        padding: 0 20px;
+        padding: 0 30px;
     }
     
     /*Hero section*/
@@ -508,7 +474,7 @@ footer{
 
 
     .centered-content h1{
-        font-size: 10px;
+        font-size: 27px;
     }
 
     #grid-work-section,
@@ -528,15 +494,16 @@ footer{
     }
 
     .share-divider{
-        width: auto;
+        gap: 0;
+
     }
 
     .share-section{
-        order: -1;
+        gap: 30px;
     }
 
-    .footer-info{
-        margin-top: 10px;
+    .footer-info p{
+        margin: 30px 0;
     }
 
     #grid-footer-section{
