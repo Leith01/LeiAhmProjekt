@@ -46,6 +46,10 @@ nav a{
     font-weight: 450;
 }
 
+.caret{
+    margin-left: 5px;
+}
+
 .brand{
     width: 100px;
     margin-left: 10px;
@@ -54,7 +58,6 @@ nav a{
 
 #nav-left, #nav-right{
     display: flex;
-    gap: 5px;
 }
 
 .nav-divider{
