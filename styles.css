@@ -18,12 +18,12 @@
     font-style: normal;
 }
 
-
 body{
     margin: 0;
     overflow-x: hidden;
 }
 
+/*---------------------------NAV-------------------------------------*/
 nav{
     padding: 20px 0px;
     display: flex;
@@ -91,6 +91,7 @@ nav a:hover{
     display: none;
 }
 
+/*------------------------------MAIN---------------------------*/
 #main{
     max-width: 1000px;
     display: flex;
@@ -102,6 +103,7 @@ nav a:hover{
     padding: 0 20px;
 }
 
+/*Hero section*/
 .hero{
     display: flex;
     flex-direction: row;
@@ -149,6 +151,8 @@ nav a:hover{
     object-fit: contain;
 }
 
+/*-------------------------------Company Logos-----------------------*/
+
 #companys{
     padding: 20px;
     margin: 40px 0;
@@ -168,6 +172,7 @@ nav a:hover{
     object-fit: contain;
 }
 
+/*------------------------------Info sections*--------------------------*/
 .info-section{
     display: flex;
     flex-direction: column;
@@ -220,6 +225,7 @@ nav a:hover{
     border-radius: 5px;
 }
 
+/*-------------------------Faces and face info------------------------*/
 .face-info{
     display: flex;
     align-items: center;
@@ -250,6 +256,7 @@ nav a:hover{
     padding-bottom: 100px;
 }
 
+/*---------------------------------Free Plan Section--------------------*/
 #free-section{
     display: flex;
     flex-direction: column;
@@ -312,6 +319,7 @@ nav a:hover{
     height: 15px;
 }
 
+/*----------------------------------Solve problems section-----------------------*/
 #solve-problems-section{
     border-top: 1px solid #e5e5e5;
     margin-top: 70px;
@@ -355,6 +363,7 @@ nav a:hover{
     border-right: none;
 }
 
+/*--------------------------------Last section--------------------*/
 #last-section{
     display: flex;
     flex-direction: column;
@@ -419,6 +428,7 @@ nav a:hover{
     border-right: none;
 }
 
+/*-------------------------------Footer-----------------------------*/
 footer{
     border-top: 1px solid #e5e5e5;
     padding-top: 70px;
@@ -490,7 +500,7 @@ footer{
 
 @media (max-width: 600px) {
 
-    /*Ta bort allt som inte behövs i nav*/
+    /*Mobile NAV*/
     nav{
         position: relative;
         border-bottom: none;
@@ -519,8 +529,6 @@ footer{
     #nav-left a, #nav-right a{
         display: none;
     }
-
-
 
    #main{
         padding: 0 30px;
@@ -578,6 +586,7 @@ footer{
         border-right: none;
     }
 
+    /* Footer*/
     #footer-section{
         flex-direction: column;
     }
