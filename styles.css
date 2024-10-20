@@ -308,6 +308,7 @@ nav a:hover{
     display: flex;
     gap: 10px;
     padding: 50px 10px;
+    max-width: 100%;
 }
 
 .rating-info{
@@ -322,6 +323,7 @@ nav a:hover{
 
 .badges{
     height: 200px;
+    object-fit: contain;
 }
 
 .grid-percantage-section{
@@ -421,6 +423,10 @@ footer{
 
     #nav-right{
         align-items: center;
+    }
+
+    .nav-divider{
+        display: none;
     }
 
     .hamburger{
