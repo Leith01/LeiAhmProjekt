@@ -56,10 +56,11 @@ nav a{
     gap: 5px;
 }
 
-.demo{
-    border-right: solid 1px lightblue;
-    padding-right: 20px;
-    height: 15px;
+.nav-divider{
+    border-right: 1px solid lightblue;
+    height: 20px;
+    margin: 0 10px;
+    align-self: center;
 }
 
 .black-button1{
