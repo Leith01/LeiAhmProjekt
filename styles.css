@@ -3,18 +3,13 @@
 }
 
 :root{
-    --button-bg-color: black;
+    --button-bg-color: #050505;
     --button-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     --button-text-color: white;
     --button-border-radius: 5px;
     --button-padding: 10px 10px;
     --button-width: 115px;
     --button-text-decoration: none;
-}
-
-body{
-    margin: 0;
-    overflow-x: hidden;
 }
 
 @font-face {
@@ -24,12 +19,18 @@ body{
     font-style: normal;
 }
 
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
 nav{
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #e5e5e5;
     margin: 0 20px;
     /*stickyyyy*/
     position: sticky;
@@ -57,14 +58,14 @@ nav a{
 }
 
 .nav-divider{
-    border-right: 1px solid lightblue;
+    border-right: 1px solid #e5e5e5;
     height: 20px;
     margin: 0 10px;
     align-self: center;
 }
 
 .black-button1{
-    background-color: black;
+    background-color: #050505;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
     border-radius: 5px;
@@ -78,7 +79,7 @@ nav a:hover{
 }
 
 .black-button1:hover{
-    background-color: #1f1f1f;
+    background-color: #121212;
     box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.15);
     cursor: pointer;
 }
@@ -118,7 +119,7 @@ nav a:hover{
 }
 
 .black-button:hover{
-    background-color: #1f1f1f;
+    background-color: #121212;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
@@ -127,6 +128,16 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.hero-info h1{
+    font-size: 45px;
+    margin: 0;
+}
+
+.hero-info p{
+    font-size: 18px;
+    color: #7f7f7f;
 }
 
 .together{
@@ -144,8 +155,8 @@ nav a:hover{
 #companys{
     padding: 20px;
     margin: 40px 0;
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
 
 #logo-wrapper{
@@ -163,11 +174,26 @@ nav a:hover{
 .info-section{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 15px;
+    margin-bottom: 40px;
 }
 
 .left-aligned{
     max-width: 490px;
+    margin-bottom: 20px;
+}
+
+.left-aligned h1{
+    color: #050505;
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.left-aligned p{
+    font-size: 16px;
+    color: #7f7f7f;
+    margin: 0;
 }
 
 .centered-content{
@@ -182,6 +208,12 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.centered-content h1,
+.centered-content2 h1{
+    color: #7f7f7f;
+    font-size: 36px;
 }
 
 .user-page{
@@ -210,15 +242,20 @@ nav a:hover{
     line-height: 1.6;
 }
 
+.text-info p:last-child{
+    color: #7f7f7f;
+    font-size: 14px;
+}
+
 .last-face-info{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #e5e5e5;
     padding-bottom: 100px;
 }
 
 #free-section{
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 80px;
     max-width: 667px;
     margin-bottom: 50px;
 }
@@ -236,12 +273,17 @@ nav a:hover{
     margin: 0;
 }
 
+.centered-text-section p{
+    color: #7f7f7f;
+    font-size: 13.5px;
+}
+
 .free-plan p{
     padding: 0 60px;
 }
 
 #plan-section{
-    background-color: #e5e5e5;
+    background-color: #f4f4f4;
     margin-top: 70px;
     border-radius: 5px;
     padding: 20px 30px;
@@ -251,7 +293,15 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.feature p{
+    color: #7f7f7f;
+}
+
+.feature p:last-child{
+    color: #050505;
 }
 
 .last-feature{
@@ -263,7 +313,7 @@ nav a:hover{
 }
 
 #solve-problems-section{
-    border-top: 1px solid gray;
+    border-top: 1px solid #e5e5e5;
     margin-top: 70px;
     padding-top: 80px;
 }
@@ -279,18 +329,25 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-right: 1px solid gray;
+    border-right: 1px solid #e5e5e5;
     padding-right: 25px;
+}
+
+.work-section p{
+    color: #7f7f7f;
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 .black-underline{
     color: black;
     text-decoration: underline;
     text-decoration-color: black;
+    text-underline-offset: 2px;
 }
 
 .work-section a:hover{
-    color: blue;
+    color: #087fe7;
     cursor: pointer;
 }
 
@@ -336,10 +393,17 @@ nav a:hover{
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-right: 1px solid gray;
+    border-right: 1px solid #e5e5e5;
+}
+
+.percentage-section h1{
+    color: #666666;
+    font-size: 53px;
+    margin: 0;
 }
 
 .percentage-section p{
+    color: #666666;
     margin: 0;
 }
 
@@ -348,7 +412,7 @@ nav a:hover{
 }
 
 footer{
-    border-top: 1px solid gray;
+    border-top: 1px solid #e5e5e5;
     padding-top: 70px;
     margin: 0 20px;
     display: flex;
@@ -372,7 +436,7 @@ footer{
 .share-section{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .last-brand{
@@ -389,6 +453,10 @@ footer{
     width: 30px;
 }
 
+.footer-info p{
+    color: #050505;
+}
+
 #grid-footer-section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -403,7 +471,7 @@ footer{
 
 .footer-links a{
     text-decoration: none;
-    color: black;
+    color: #7f7f7f;
 }
 
 .footer-links a:hover{
@@ -481,7 +549,12 @@ footer{
 
 
     .centered-content h1{
-        font-size: 27px;
+        font-size: 26px;
+    }
+
+    .centered-content2 h1{
+        font-size: 26px;
+        text-align: center;
     }
 
     #grid-work-section,
@@ -489,6 +562,7 @@ footer{
     .grid-percantage-section{
         display: flex;
         flex-direction: column;
+        gap: 40px;
     }
 
     .percentage-section,
