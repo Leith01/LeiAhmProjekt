@@ -381,6 +381,7 @@ nav a:hover{
 .badges{
     height: 200px;
     object-fit: contain;
+    max-width: 100%;
 }
 
 .grid-percantage-section{
